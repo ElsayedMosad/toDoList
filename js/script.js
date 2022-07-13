@@ -64,7 +64,7 @@ function playNewTask(e) {
   let taskValue = taskText.value;
   // pFiveCon
   if (taskValue == "") {
-    alertBoxShow("Field Is Empty", "rgb(252, 149, 183)");
+    alertBoxShow("Please Enter Value", "rgb(252, 149, 183)");
   } else if (cheakTaskWriten(taskValue) && !editTask) {
     alertBoxShow("Task Is already Writen", "rgb(161, 241, 255)");
   } else if (taskValue !== "" && !cheakTaskWriten(taskValue) && !editTask) {
@@ -160,7 +160,7 @@ function alertBoxShow(textAlertBox, alertBoxBg) {
   setTimeout(function () {
     alertBox.textContent = ``;
     alertBox.style.backgroundColor = `transparent`;
-  }, 3000);
+  }, 4000);
 }
 
 clearItems.addEventListener("click", () => {
